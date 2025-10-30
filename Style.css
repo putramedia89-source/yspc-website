@@ -1,0 +1,309 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #d3af37;
+  color: white;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #d3af37;
+}
+
+button {
+  background-color: #d3af37;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d3af37;
+}
+
+footer {
+  background-color: #eee;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* === DASHBOARD STYLE === */
+.dashboard-body {
+  margin: 0;
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #0066cc;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #f7f9fc;
+}
+
+.main-content h1 {
+  color: #0066cc;
+}
+/* === NAVBAR DENGAN LOGO === */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
+  width: 100px;        /* ukuran logo */
+  height: 100px;
+  object-fit: contain;
+  border-radius: 5px; /* opsional, biar sudutnya halus */
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+/* === NAVBAR STYLE === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c8a64b;
+  padding: 15px 40px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: #f1f1f1;
+  text-decoration: underline;
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar .nav-links li {
+    width: 100%;
+  }
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6f6f6;
+  color: #333;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: #c8a64b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  text-decoration: underline;
+}
+
+/* === HERO SECTION === */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #c8a64b, #d4b35e);
+  color: white;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: white;
+  color: #c8a64b;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero .btn:hover {
+  background-color: #f9f9f9;
+}
+
+/* === CONTENT SECTION === */
+.content, .intro {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.content-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* === PROGRAM GRID === */
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.program-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* === KONTAK === */
+.kontak-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.kontak-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.kontak-form input,
+.kontak-form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.kontak-form button {
+  background-color: #c8a64b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.kontak-form button:hover {
+  background-color: #b18f3f;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 40px;
+}
